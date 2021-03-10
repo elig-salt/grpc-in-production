@@ -2,11 +2,12 @@
 
 syntax = "proto3";
 
-package com.language;
+package com.language.v1;
 
 message Language {
   // The ISO 639-1 language code.
   enum Code {
-    EN = 0;
+    CODE_UNSPECIFIED = 0;
+    CODE_EN = 1;
   }
 }
