@@ -9,6 +9,7 @@ cd buf
 ## Buf
 # Create a buf.yaml file
 buf beta mod init
+# EDIT buf.yaml and change FILE to WIRE_JSON
 
 # Make sure buf picks up your files
 buf ls-files
@@ -40,3 +41,19 @@ buf lint .
 - move `hello_service.proto` to `services/hello/` folder
 - create folder `v1` in `services/hello/`
 - move `hello_service.proto` into `services/hello/v1` folder
+
+
+## Taking a snapshot of the schema
+```sh
+  buf build -o image.json
+
+  # Try changing something, and everytime run the following line:
+  buf breaking --against image.json
+
+  # Adding CODE_HE = 2;
+  # Changing CODE_EN = 1 to CODE_EN = 2;
+  # Deleting CODE_ENV
+  # Changing a string to an int32...
+```
+
+### 
