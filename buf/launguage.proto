@@ -1,0 +1,12 @@
+// proto/com/language/language.proto
+
+syntax = "proto3";
+
+package com.language;
+
+message Language {
+  // The ISO 639-1 language code.
+  enum Code {
+    EN = 0;
+  }
+}
