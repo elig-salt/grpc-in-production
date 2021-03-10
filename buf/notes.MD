@@ -4,6 +4,8 @@
 ## Buf
 # Create a buf.yaml file
 buf beta mod init
+# EDIT buf.yaml and change FILE to WIRE_JSON
+
 
 # Make sure buf picks up your files
 buf ls-files
