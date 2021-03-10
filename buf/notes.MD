@@ -36,8 +36,7 @@ buf lint .
 - language.proto:10 - add uppercase `CODE_` prefix to `EN` value
 - language.proto:10 - add `CODE_UNSPECIFIED = 0;` before `CODE_EN`
 - language.proto:11 - `CODE_EN = 0;` to `CODE_EN = 1;`
-- create `services` folder
-- move `hello_service.proto` to `services/` folder
-
-- create folder `v1` in `services`
-- move `hello_service.proto` into `services/v1` folder
+- create `services` and inside `hello` folder
+- move `hello_service.proto` to `services/hello/` folder
+- create folder `v1` in `services/hello/`
+- move `hello_service.proto` into `services/hello/v1` folder
