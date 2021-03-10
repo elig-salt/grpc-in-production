@@ -11,4 +11,4 @@ gRPC connections are HTTP2 based - meaning multiple requests are multiplexed on 
 
 A client will have all of his requests sent on the first connection it opened.
 Check out an awesome way to solve this, and also benefit from a variety of additional tools and capabilities:
-[LinkedD](./linkerd-demo/README.md)
+[LinkerD](./linkerd-demo/README.md)
