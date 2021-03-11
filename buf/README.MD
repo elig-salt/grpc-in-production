@@ -8,6 +8,9 @@ https://github.com/bufbuild/buf
 Follow the instructions:
 https://docs.buf.build/installation/#via-homebrew
 
+MAKE SURE YOU `cd` into `buf` folder !
+
+
 ```sh
 brew tap bufbuild/buf
 brew install buf
@@ -24,7 +27,7 @@ If you get stuck - switch to `lint-fixed` branch :)
 
 
 Taking a snapshot:
-cd buf
+
 ```sh
 buf build -o image.json
 ```
